@@ -1,7 +1,5 @@
 <template>
-    <div class="swiperContent">
-
-    </div>
+    <div class="swiperContent"></div>
 </template>
 
 <script>
