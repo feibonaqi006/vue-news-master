@@ -8,7 +8,7 @@
       <img src="../assets/refresh.png" class="header-refresh" :class="{'rotate': refresh == true}">
     </div>
     <div class="header-right">
-      <img src="../assets/search.png" class="header-search" @click="search">
+      <img src="../assets/search.png" class="header-search" @click="search(tag)">
     </div>
   </div>
 </template>
@@ -17,11 +17,16 @@
 export default {
   data () {
     return {
-      refresh: false
+      refresh: false,
+      // tab是否隐藏  隐藏
+      tag: true
     }
   },
   methods: {
-    search () {
+    search (tag) {
+      // console.log(tag)
+      this.$emit('getVal', tag)
+      console.log(tag)
       this.$router.push('/search')
     },
     freshPage () {
@@ -39,6 +44,7 @@ export default {
     position: fixed;
     height: 90px;
     width: 100%;
+    margin-top: -100px;
     background: #d43d3d;
     z-index: 1;
   }

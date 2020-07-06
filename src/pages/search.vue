@@ -7,7 +7,7 @@
         <ul id="search-tip" v-if="this.tag == false">
             <li v-for="(item, index) in searchRecommend" :key="index" @click="showNewsDetail(index)">{{item.keyword}}</li>
         </ul>
-        <div class="search-list" v-else>
+        <div class="search-list" v-if="this.tag != false">
             <news-list :newslist="searchResult" :searchKey="searchValue"></news-list>
         </div>
     </div>
@@ -25,6 +25,8 @@ export default {
       searchRecommend: [],
       // 是否展示新闻详细内容
       tag: false
+      // 是否出现搜索框 出现
+      // tagK: true
     }
   },
   components: {
@@ -47,6 +49,7 @@ export default {
             this.searchRecommend = res.data.data
           }
           // console.log(this.searchRecommend)
+          // this.tagK = false
         })
       }
     },
@@ -67,6 +70,7 @@ export default {
         // console.log(this.searchResult)
       })
       this.tag = true
+      // this.tagK = false
     }
   }
 }
@@ -77,6 +81,7 @@ export default {
   position: absolute;
   height: 100%;
   width: 100%;
+  margin-top: -60px;
 }
 .goBack {
   float: right;

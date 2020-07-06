@@ -1,7 +1,7 @@
 <template>
- <div class="page-hot">
-   <div class="info-hot">热点</div>
- </div>
+    <div class="page-game">
+        <div class="info-game">游戏</div>
+    </div>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style scoped>
-  .info-hot {
+  .info-game {
     width: 800px;
     height: 800px;
     font-size: 36px;
