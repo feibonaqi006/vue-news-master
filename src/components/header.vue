@@ -8,7 +8,7 @@
       <img src="../assets/refresh.png" class="header-refresh" :class="{'rotate': refresh == true}">
     </div>
     <div class="header-right">
-      <img src="../assets/search.png" class="header-search" @click="search(tag)">
+      <img src="../assets/search.png" class="header-search" @click="search">
     </div>
   </div>
 </template>
@@ -23,10 +23,10 @@ export default {
     }
   },
   methods: {
-    search (tag) {
+    search () {
       // console.log(tag)
-      this.$emit('getVal', tag)
-      console.log(tag)
+      // this.$emit('getVal', tag)
+      // console.log(tag)
       this.$router.push('/search')
     },
     freshPage () {

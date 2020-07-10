@@ -1,13 +1,14 @@
 <template>
     <div class="page-game">
-        <div class="info-game">游戏</div>
+      <div class="info-game">游戏</div>
     </div>
 </template>
 
 <script>
 export default {
   data () {
-    return {}
+    return {
+    }
   }
 }
 </script>

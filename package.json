@@ -9,9 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "element-ui": "^2.13.2",
     "vue": "^2.6.11",
-    "vue-awesome-swiper": "^4.1.1",
+    "vue-cli": "^2.9.6",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
@@ -24,13 +23,14 @@
     "@vue/eslint-config-standard": "^5.1.2",
     "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "compression-webpack-plugin": "^1.1.12",
+    "eslint": "^7.4.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
-    "swiper": "^3.4.2",
+    "image-webpack-loader": "^6.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -51,5 +51,18 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feibonaqi006/vue-news-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feibonaqi006/vue-news-master/issues"
+  },
+  "homepage": "https://github.com/feibonaqi006/vue-news-master#readme"
 }

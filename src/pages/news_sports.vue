@@ -1,13 +1,14 @@
 <template>
     <div class="page-sports">
-        <div class="info-sports">体育</div>
+      <div class="info-sports">体育</div>
     </div>
 </template>
 
 <script>
 export default {
   data () {
-    return {}
+    return {
+    }
   }
 }
 </script>
